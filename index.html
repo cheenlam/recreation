@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- 外掛插件 -->
+    <script src="js/swipeslider.js?v1.0.0"></script>
+    <script src="js/router.js?v1.0.5"></script>
+    <title>Document</title>
+</head>
+
+<body>
+     <!-- ===== header start ===== -->
+    <div class="header">
+        <div class="inner">
+            <div class="hd_left">
+                <div class="guide_cnt">
+                    <div class="navBar" id="navBar">
+                        <img src="/img/icon/navBar.svg" alt="navBar">
+                    </div>
+                </div>
+                <a class="logo" href="#/home">
+                    <img src="/img/logo.png" alt="logo">
+                </a>
+                <div class="hd_menu">
+                    <ul>
+                        <li>
+                            <a href=""><span>體育博彩</span></a>
+                            <div class="gameList">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <div class="gameImg">
+                                                <img src="/img/gameList/sport_01.png">
+                                            </div>
+                                            <p>CMD368</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href=""><span>真人娛樂</span></a>
+                            <div class="gameList">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <div class="gameImg">
+                                                <img src="/img/gameList/casino_01.png">
+                                            </div>
+                                            <p>Evolution Gaming</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <div class="gameImg">
+                                                <img src="/img/gameList/casino_02.png">
+                                            </div>
+                                            <p>AE Casino</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <div class="gameImg">
+                                                <img src="/img/gameList/casino_03.png">
+                                            </div>
+                                            <p>SA Gaming</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <div class="gameImg">
+                                                <img src="/img/gameList/casino_04.png">
+                                            </div>
+                                            <p>WM Casino</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <div class="gameImg">
+                                                <img src="/img/gameList/casino_05.png">
+                                            </div>
+                                            <p>Dream Gaming</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href=""><span>老虎機</span></a>
+                            <div class="gameList">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <div class="gameImg">
+                                                <img src="/img/gameList/slot_01.png">
+                                            </div>
+                                            <p>NextSpin</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <div class="gameImg">
+                                                <img src="/img/gameList/slot_02.png">
+                                            </div>
+                                            <p>Mega888</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <div class="gameImg">
+                                                <img src="/img/gameList/slot_03.png">
+                                            </div>
+                                            <p>JILI</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <div class="gameImg">
+                                                <img src="/img/gameList/slot_04.png">
+                                            </div>
+                                            <p>Spadegaming</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href=""><span>捕魚</span></a>
+                            <div class="gameList">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <div class="gameImg">
+                                                <img src="/img/gameList/fish_01.png">
+                                            </div>
+                                            <p>NextSpin</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <div class="gameImg">
+                                                <img src="/img/gameList/fish_02.png">
+                                            </div>
+                                            <p>Spadegaming</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <div class="gameImg">
+                                                <img src="/img/gameList/fish_03.png">
+                                            </div>
+                                            <p>JILI</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <div class="gameImg">
+                                                <img src="/img/gameList/fish_04.png">
+                                            </div>
+                                            <p>YesGetRich</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href=""><span>彩票</span></a>
+                            <div class="gameList">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <div class="gameImg">
+                                                <img src="/img/gameList/lottery_01.png">
+                                            </div>
+                                            <p>QQkeno</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href=""><span>優惠活動</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hd_right">
+                <ul>
+                    <li><a href="">登入</a></li>
+                    <li>
+                        <a href="">
+                            <div class="regBtn">註冊</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 側邊選單 -->
+            <div class="sideMenu" id="sideMenu">
+                <div class="closeBg" id="sideMenu_close"></div>
+                <div class="menuCnt">
+                    <div class="toolList">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <div class="selIcon home"></div>
+                                    <p>主頁面</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="selIcon discount"></div>
+                                    <p>優惠活動</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="selIcon about"></div>
+                                    <p>關於我們</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="selIcon question"></div>
+                                    <p>常見問題</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="selIcon contact"></div>
+                                    <p>聯絡我們</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="selIcon terms"></div>
+                                    <p>條款與條規</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="loginBtn">登入</div>
+
+                    <div class="gameList">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <div class="selIcon sport"></div>
+                                    <p>體育博彩</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="selIcon casino"></div>
+                                    <p>真人娛樂</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="selIcon slot"></div>
+                                    <p>老虎機</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="selIcon fish"></div>
+                                    <p>捕魚</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="selIcon lottery"></div>
+                                    <p>彩票</p>
+                                </a>
+                            </li>
+                        
+                        </ul>
+                    </div>        
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ===== content start ===== -->
+    <div class="content" id="content"></div>
+
+    <!-- ===== footer start ===== -->
+    <div class="footer">
+        <div class="inner">    
+            <!-- ft_link(連結menu) start -->
+            <div class="ft_link">
+                <div class="linkMenu">
+                    <div class="title">遊戲類別</div>
+                    <ul>
+                        <ul>
+                            <li><a href="">體育博彩</a></li>
+                            <li><a href="">真人娛樂</a></li>
+                            <li><a href="">老虎機</a></li>
+                            <li><a href="">捕魚</a></li>
+                            <li><a href="">彩票</a></li>
+                        </ul>
+                    </ul>
+                </div>
+
+                <div class="linkMenu">
+                    <div class="title">本站訊息</div>
+                    <ul>
+                        <ul>
+                            <li><a href="">關於我們</a></li>
+                            <li><a href="">聯絡我們</a></li>
+                            <li><a href="">常見問題</a></li>
+                            <li><a href="">條款與條規</a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ft_plat start -->
+            <div class="ft_plat">
+                <div class="item">
+                    <div class="title">支付方式</div>
+                        <ul>
+                            <li><img src="/img/icon/footer/fastPay.webp" alt="fastPay"></li>   
+                            <li><img src="/img/icon/footer/bitcoin.svg" alt="bitcoin"></li>
+                            <li><img src="/img/icon/footer/ethereum.svg" alt="ethereum"></li>
+                            <li><img src="/img/icon/footer/usdt.svg" alt="usdt"></li>
+                            <li><img src="/img/icon/footer/fpx.svg" alt="fpx"></li> 
+                        </ul>
+                </div>
+                <div class="item">
+                    <div class="title">關注我們</div>
+                    <ul>
+                        <li><a href=""><img src="/img/icon/footer/fb.svg" alt="facebook"></li></a></li>
+                        <li><a href=""><img src="/img/icon/footer/ig.svg" alt="instagram"></li></a></li>
+                        <li><a href=""><img src="/img/icon/footer/tw.svg" alt="twitter"></li></a></li>
+                        <li><a href=""><img src="/img/icon/footer/yt.svg" alt="youtube"></li></a></li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="title">推薦瀏覽器</div>
+                    <ul>
+                        <li><a href=""><img src="/img/icon/footer/chrome.webp" alt="chrome"></li></a></li>
+                        <li><a href=""><img src="/img/icon/footer/edge.webp" alt="edge"></li></a></li>
+                        <li><a href=""><img src="/img/icon/footer/firefox.webp" alt="firefox"></li></a></li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="title">年齡限制</div>
+                    <ul>
+                        <li><img src="/img/icon/footer/18plus.webp" alt="18+"></li>
+                        <li><img src="/img/icon/footer/gamcare.webp" alt="gamcare"></li> 
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ft_depiction(瀑布流敘述) start -->
+            <div class="ft_depiction">
+                <div class="item">
+                    <div class="title">歡迎來到線上博彩娛樂</div>
+                    <p>我們為您提供快捷方便的電子服務, 讓玩家在最短的時間內進行存（提）款。您只需進行一些簡單步驟, 即可輕鬆完成各種轉賬步驟。我們為您提供最高的保全科技讓您在我們的網站安全的進行每一項遊戲並確保您在無後顧之憂的情況下暢享遊戲。</p>
+                </div>
+                <div class="item">
+                    <div class="title">代理合營</div>
+                    <p>歡迎成為我們的合營夥伴，您只需點擊分享並邀請您的朋友一起加入我們的線上博彩即可獲得豐厚佣金。</p>
+                </div>
+                <div class="item">
+                    <div class="title">安全</div>
+                    <p>我們是一家執照認證的線上博彩公司，所有會員的在線資金都將獲得保障。同時，我們所提供的科技保全系統確保每一位玩家的個人信息得到全方位的安全與保密，防止玩家信息被盜。</p>
+                </div>
+                <div class="item">
+                    <div class="title">虛擬體育</div>
+                    <p>我們的網站備有虛擬體育遊戲, 其廣泛的虛擬體育遊戲包括虛擬足球,虛擬 籃球,虛擬電子競技, 虛擬美式足球, 虛擬棒球, 虛擬冰球, 虛擬網球, 虛擬羽毛球, 虛擬高爾夫, 虛擬板球, 虛擬排球, 虛擬手球, 虛擬台球, 虛擬摩托車, 虛擬飛鏢, 虛擬拳泰國，虛擬自行車及虛擬冬季運動賽事。</p>
+                </div>
+                <div class="item">
+                    <div class="title">真人娛樂廳</div>
+                    <p>真人娛樂廳綜合多項優越性能，其畫面設計讓線上真人娛樂廳呈現富有最真實感的桌面博彩遊戲。我們您提供各類亞洲及歐洲最頂尖的真人娛樂平台，玩家可依據個人偏好從中選取個人喜愛的真人娛樂遊戲。</p>
+                </div>
+                <div class="item">
+                    <div class="title">老虎機遊戲</div>
+                    <p>老虎機遊戲的創新為世界各地的玩家提供了一個方便快捷的遊戲方式，您只需在手機上登入即可參與您所鍾愛的老虎機遊戲。老虎機遊戲玩法簡單創新，我們所提供的遊戲平台來自世界各地著名的遊戲供應商。</p>
+                </div>
+                <div class="item">
+                    <div class="title">撲克</div>
+                    <p>最新科技與撲克融為一體，為玩家改造成快捷方便的移動應用。玩家可隨時隨地進入遊戲。即刻下載撲克應用程序，享受我們為您提供的遊戲平台 。</p>
+                </div>
+                <div class="item">
+                    <div class="title">捕魚網</div>
+                    <p>捕魚網乃先下最受歡迎的街機遊戲, 玩家可通過我們的應用程序進入遊戲體驗深海探索。玩家不必外出也能享有捕魚網游戲所帶來的樂趣。我們備有市面上熱門的供應商,分別為 GG 捕魚及 Playtech 捕魚，兩者皆提供獨特的捕魚體驗。您可體驗深海捕魚的樂趣，瞄準及射出你的電源網抓住每一條魚, 並獲得更多及最高的獎勵。</p>
+                </div>
+                <div class="item">
+                    <div class="title">優惠</div>
+                    <p>一旦您成功註冊成為會員即可享有我們網上的迎新獎金及存款獎勵。除了新會員獎勵以外, 活躍會員還可獲得現金回扣及每星期特別紅利。優惠每月更新，只為您提供最好的。</p>
+                </div>
+                <div class="item">
+                    <div class="title">付款選項</div>
+                    <p>作為亞洲尖端的在線賭場平台，我們提供了多樣化的存（提）款方式，會員可依據個人的偏好進行交易。所支持的交易方式包括 EeziePay、PayTrust 及 Help2Pay為客戶提供各項存（提）款選擇。</p>
+                </div>
+                <div class="item">
+                    <div class="title">聯繫我們</div>
+                    <p>如您有任何諮詢，請聯繫我們的在線客服。我們為有多個聯繫渠道包括微信及WhatsApp ，24小時為您提供服務。</p>
+                </div>
+                <div class="item">
+                    <div class="title">您不可錯過的在線博彩平台</div>
+                    <p>身為當前最火紅的平台，我們提供著世界各地著名的供應商，尤其馬來西亞和印度尼西亞的供應商的遊戲。在這裡，你不僅能夠體驗多種在線博彩遊戲，還能無分時間地點，隨時隨地都能進行存提款，時刻漫遊在遊戲世界中。立即成為我們的會員，在體驗我們所有的在線博彩遊戲, 如真人娛樂, 老虎機遊戲, SCR888/918KISS, 體育, 撲克和捕魚游戲的同時享受各種新手獨家現金返還優惠！</p>
+                </div>
+            </div>
+            
+            <!-- ft_provider(遊戲提供商) start -->
+            <div class="ft_provider">
+                <div class="title">遊戲供應商</div>
+                <div class="item">
+                    <span>slots</span>
+                    <ul>
+                        <li><img src="/img/coop/slot/cq9.webp"></li>
+                        <li><img src="/img/coop/slot/fachai.webp"></li>
+                        <li><img src="/img/coop/slot/flow-gaming.webp"></li>
+                        <li><img src="/img/coop/slot/funky-games.webp"></li>
+                        <li><img src="/img/coop/slot/habanero.webp"></li>
+                        <li><img src="/img/coop/slot/iconic-gaming.webp"></li>
+                        <li><img src="/img/coop/slot/ion-slot.webp"></li>
+                        <li><img src="/img/coop/slot/jdb.webp"></li>
+                        <li><img src="/img/coop/slot/joker.webp"></li>
+                        <li><img src="/img/coop/slot/live22.webp"></li>
+                        <li><img src="/img/coop/slot/microgaming.webp"></li>
+                        <li><img src="/img/coop/slot/one-touch.webp"></li>
+                        <li><img src="/img/coop/slot/pgsoft.webp"></li>
+                        <li><img src="/img/coop/slot/playngo.webp"></li>
+                        <li><img src="/img/coop/slot/playtech.webp"></li>
+                        <li><img src="/img/coop/slot/pp.webp"></li>
+                        <li><img src="/img/coop/slot/reel-kingdom.webp"></li>
+                        <li><img src="/img/coop/slot/rtg.webp"></li>
+                        <li><img src="/img/coop/slot/slot88.webp"></li>
+                        <li><img src="/img/coop/slot/spade-gaming.webp"></li>
+                        <li><img src="/img/coop/slot/yggdrasil.webp"></li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <span>live casino</span>
+                    <ul>
+                        <li><img src="/img/coop/live/ag.webp"></li>
+                        <li><img src="/img/coop/live/allbet.webp"></li>
+                        <li><img src="/img/coop/live/dream-gaming.webp"></li>
+                        <li><img src="/img/coop/live/evo-gaming.webp"></li>
+                        <li><img src="/img/coop/live/mg-live.webp"></li>
+                        <li><img src="/img/coop/live/pgs-live.webp"></li>
+                        <li><img src="/img/coop/live/pretty-gaming.webp"></li>
+                        <li><img src="/img/coop/live/sexy-baccarat.webp"></li>
+                        <li><img src="/img/coop/live/sv388.webp"></li>
+                        <li><img src="/img/coop/live/trg.webp"></li>
+                        <li><img src="/img/coop/live/sbo.webp"></li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <span>sports</span>
+                    <ul>
+                        <li><img src="/img/coop/sport/ibc-sports.webp"></li>
+                        <li><img src="/img/coop/sport/opus.webp"></li>
+                        <li><img src="/img/coop/sport/pinnacle.webp"></li>
+                        <li><img src="/img/coop/sport/pp.webp"></li>
+                        <li><img src="/img/coop/sport/sbo.webp"></li>
+                        <li><img src="/img/coop/sport/tf-gaming.webp"></li>
+                        <li><img src="/img/coop/sport/wbet.webp"></li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <span>poker</span>
+                    <ul>
+                        <li><img src="/img/coop/poker/g8-poker.webp"></li>
+                        <li><img src="/img/coop/poker/idn.webp"></li>
+                        <li><img src="/img/coop/poker/nine-gaming.webp"></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; Copyright 2022 registered name</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('#navBar').click(()=>{
+            $('#sideMenu').addClass('on');
+        })
+        $('#sideMenu_close').click(()=>{
+            $('#sideMenu').removeClass('on');
+        })
+    </script>
+</body>
+
+</html>

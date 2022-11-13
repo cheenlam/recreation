@@ -1,0 +1,457 @@
+// ===== header start =====
+.header {
+    width: 100%;
+     
+    position: fixed;
+    @include pos(tlr, 0);
+    z-index: 10;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    .inner{
+        max-width: 1920px;
+        height: 60px;
+        margin: auto;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    @at-root .hd_left {
+        display: flex;
+        align-items: center;
+        .navBar {
+            width: 30px;
+            cursor: pointer;
+        }
+        .logo {
+            width: 75px;
+            margin: 0 30px 0 15px;
+            cursor: pointer;
+        }
+        .hd_menu {
+            @include rwd(800) {
+                display: none;
+            }
+            ul {
+                display: flex;
+                align-items: center;
+            }
+            li {
+                span {
+                    padding: 20px 0;
+                    display: inline-block;
+                    cursor: pointer;
+                    transition: color 0.5s;
+                }
+                @include hover {
+                    &:hover {
+                        .gameList {
+                            display: block;
+                            z-index: 10;
+                        }
+                        span {
+                            @include map-get("color", $hdmenu, "focus");
+                        }
+                    }
+                }
+                &.on {
+                    span {
+                        @include map-get("color", $hdmenu, "focus");
+                    }
+                }
+            }
+            li + li {
+                padding-left: 25px;
+            }
+        }
+        .gameList {
+            width: 100%;
+            padding: 15px 20px 10px;
+            position: absolute;
+            @include pos(tl, 100%, 0);
+            display: none;
+            &::before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                @include pos(tl, 0);
+                @include map-get("background-color", $hdmenu, "bgc");
+                box-shadow: 0 0 20px #000 inset;
+                opacity: 0.8;
+            }
+            ul {
+                flex-wrap: wrap;
+                position: relative;
+                justify-content: center;
+            }
+            li {
+                padding: 0;
+                margin: 0 10px 25px;
+                opacity: 0.7;
+                transition: opacity 0.3s;
+                cursor: pointer;
+                @include hover {
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+            li + li {
+                padding: 0;
+            }
+            .gameImg {
+                width: 150px;
+                filter: drop-shadow(4px -2px 2px rgba(0, 0, 0, 0.7));
+            }
+            p {
+                padding-top: 5px;
+                text-align: center;
+                color: #fff;
+                font-size: 13px;
+            }
+        }
+    }
+
+    @at-root .hd_right {
+        ul {
+            display: flex;
+            align-items: center;
+        }
+        li + li {
+            margin-left: 20px;
+        }
+        .regBtn {
+            margin: 10px 0;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: #fff;
+            @include map-get("background-color", $hdmenu, "focus");
+            animation: move 1.5s infinite linear;
+        }
+    }
+
+    // 側邊選單
+    @at-root .sideMenu {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        @include pos(tl, 0);
+        visibility: hidden;
+        z-index: 999;
+        &.on {
+            visibility: visible;
+            .menuCnt {
+                transition: 0.5s;
+                transform: translateX(0);
+            }
+        }
+        .closeBg {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            @include pos(tl, 0);
+            background-color: rgba(0, 0, 0, 0.7);
+            cursor: pointer;
+        }
+        .menuCnt {
+            width: calc(100vw - 80px);
+            max-width: 400px;
+            height: 100%;
+            padding: 25px 10px;
+            background-color: #fff;
+            position: relative;
+            transform: translateX(-100%);
+        }
+        .toolList,
+        .gameList {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            li {
+                width: 50%;
+                @include rwd(600) {
+                    width: 100%;
+                }
+                @include hover {
+                    &:hover {
+                        background-color: #f5f5f5;
+                    }
+                }
+            }
+            a {
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                font-weight: bold;
+                color: #064f70;
+            }
+        }
+        .selIcon {
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+            background: no-repeat center / cover;
+            &.home {
+                background-image: url(/img/icon/sideMenu/home.svg);
+            }
+            &.sport {
+                background-image: url(/img/icon/sideMenu/sport.svg);
+            }
+            &.casino {
+                background-image: url(/img/icon/sideMenu/casino.svg);
+            }
+            &.slot {
+                background-image: url(/img/icon/sideMenu/slot.svg);
+            }
+            &.fish {
+                background-image: url(/img/icon/sideMenu/fish.svg);
+            }
+            &.lottery {
+                background-image: url(/img/icon/sideMenu/lottery.svg);
+            }
+            &.discount {
+                background-image: url(/img/icon/sideMenu/discount.svg);
+            }
+            &.about {
+                background-image: url(/img/icon/sideMenu/about.svg);
+            }
+            &.question {
+                background-image: url(/img/icon/sideMenu/question.svg);
+            }
+            &.contact {
+                background-image: url(/img/icon/sideMenu/contact.svg);
+            }
+            &.terms {
+                background-image: url(/img/icon/sideMenu/terms.svg);
+            }
+        }
+        .loginBtn {
+            margin: 30px 10px;
+            padding: 10px 10px;
+            text-align: center;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            @include map-get("background-color", $hdmenu, "focus");
+            animation: move 1.5s infinite linear;
+        }
+    }
+}
+
+@keyframes move {
+    0% {
+        opacity: 0.8;
+    }
+    10% {
+        transform: translateX(1px);
+    }
+    20% {
+        transform: translateX(0px);
+    }
+    30% {
+        transform: translateX(-1px);
+    }
+    70% {
+        transform: translateX(0) scale(1);
+        box-shadow: rgba(255, 138, 0, 0.3) 0 0 0 4px;
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: rgba(255, 138, 0, 0.3) 0 0 0 8px;
+        opacity: 1;
+    }
+}
+
+// ===== content start =====
+.content {
+    max-width: 1920px;
+    margin: auto;
+    padding-top: 60px;
+}
+
+// ===== footer start =====
+.footer {
+    font-size: 14px;
+    @include map-get("background-color", $ftMenu, "bgc");
+    color: #fff;
+
+    .inner {
+        max-width: 1920px;
+        margin: auto;
+        padding: 40px 20px 0;
+    }
+    // ft_link(連結menu) start
+    @at-root .ft_link {
+        margin-bottom: 40px;
+        display: flex;
+        @include rwd(800) {
+            flex-direction: column;
+        }
+        .linkMenu {
+            .title {
+                padding-bottom: 5px;
+                font-weight: bold;
+                @include map-get("color", $ftMenu, "link");
+            }
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            li {
+                position: relative;
+                transition: 0.5s;
+                @include hover {
+                    &:hover {
+                        @include map-get("color", $hdmenu, "focus");
+                    }
+                }
+            }
+            li + li {
+                padding-bottom: 5px;
+                margin-left: 20px;
+                &::before {
+                    content: "";
+                    width: 2px;
+                    height: 15px;
+                    margin: auto;
+                    background-color: #fff;
+                    position: absolute;
+                    top: 3px;
+                    left: -10px;
+                }
+            }
+        }
+        .linkMenu + .linkMenu {
+            margin-left: 50px;
+            @include rwd(800) {
+                margin-top: 20px;
+                margin-left: 0;
+            }
+        }
+    }
+
+    // ft_plat start
+    @at-root .ft_plat {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        @include rwd(1000) {
+            justify-content: space-between;
+            .item:first-child {
+                width: 100%;
+            }
+        }
+        .item {
+            margin: 0 25px 10px 0;
+        }
+        .title {
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        li {
+            padding-bottom: 10px;
+        }
+        li + li {
+            margin-left: 8px;
+        }
+        img {
+            height: 35px;
+        }
+    }
+
+    // ft_depiction(瀑布流敘述) start
+    @at-root .ft_depiction {
+        width: 100%;
+        padding: 20px 10px;
+        margin: 0 auto 20px;
+        column-count: 5;
+        column-gap: 20px;
+        border-top: 1px dotted #999;
+        border-bottom: 1px dotted #999;
+        @include rwd(1350) {
+            column-count: 4;
+        }
+        @include rwd(1100) {
+            column-count: 3;
+        }
+        @include rwd(850) {
+            column-count: 2;
+        }
+        @include rwd(550) {
+            column-count: 1;
+        }
+
+        .item + .item {
+            margin-top: 20px;
+        }
+        .title {
+            padding-bottom: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            @include map-get("color", $ftMenu, "depiction");
+        }
+        p {
+            color: #ccc;
+            line-height: 20px;
+        }
+    }
+
+    // ft_provider(遊戲提供商) start
+    @at-root .ft_provider {
+        margin-bottom: 20px;
+        .item {
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #999;
+            border-radius: 10px;
+            position: relative;
+        }
+        .item + .item {
+            margin-top: 20px;
+        }
+        span {
+            padding: 0 10px;
+            font-size: 18px;
+            font-weight: 550;
+            font-style: italic;
+            text-transform: capitalize;
+            letter-spacing: 0.5px;
+            position: absolute;
+            @include map-get("background-color", $ftMenu, "bgc");
+            @include pos(tl, -10px, 20px);
+            color: #999;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        li {
+            padding: 5px;
+        }
+        img {
+            height: 45px;
+        }
+        .title {
+            padding-bottom: 20px;
+            font-size: 15px;
+            font-weight: bold;
+            @include map-get("color", $ftMenu, "depiction");
+        }
+    }
+
+    @at-root .copyright {
+        padding: 20px 10px;
+        text-align: center;
+    }
+}

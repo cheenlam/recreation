@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 127.559 127.574" style="enable-background:new 0 0 127.559 127.574;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#7747FC;}
+	.st1{fill:#FDFDFD;}
+	.st2{fill:#C9BBF2;}
+	.st3{opacity:0.6;}
+	.st4{fill:none;}
+	.st5{fill:#CDC0E2;}
+	.st6{fill:#9680EA;}
+	.st7{fill:#CCC2FF;}
+</style>
+<g>
+	<path class="st0" d="M125.6504,79.21532c-8.52025,34.17468-43.13087,54.96821-77.30534,46.44994
+		c-34.16093-8.52025-54.95844-43.13286-46.4344-77.30156c8.51447-34.17847,43.12509-54.97398,77.29-46.45473
+		C113.37513,10.42843,134.16866,45.04483,125.6504,79.21532z"/>
+	<g>
+		<g>
+			<path class="st1" d="M63.77317,11.27405L31.5316,64.7692l32.24157,19.04838V11.27405"/>
+			<path class="st2" d="M63.77317,11.27405v72.54353l32.2289-19.04838L63.77317,11.27405"/>
+			<g class="st3">
+				<g>
+					<defs>
+						<rect id="SVGID_1_" x="31.5316" y="50.10588" width="64.47047" height="33.7117"/>
+					</defs>
+					<clipPath id="SVGID_2_">
+						<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+					</clipPath>
+				</g>
+			</g>
+			<polyline class="st4" points="63.77317,11.27405 63.77317,83.81758 31.5316,83.81758 31.5316,11.27405 			"/>
+			<polyline class="st4" points="96.01473,11.27405 96.01473,83.81758 63.77317,83.81758 63.77317,11.27405 			"/>
+			<polyline class="st4" points="31.5316,116.29994 31.5316,70.87786 63.77317,70.87786 63.77317,116.29994 			"/>
+			<path class="st1" d="M63.77317,89.92624L31.5316,70.87786l32.24157,45.42209"/>
+			<polyline class="st4" points="63.77317,116.29994 63.77317,70.87786 96.0274,70.87786 96.0274,116.29994 			"/>
+			<path class="st5" d="M63.77317,116.29994L96.0274,70.87786L63.77317,89.92624"/>
+		</g>
+		<polygon class="st6" points="63.77317,83.81758 96.00207,64.7692 63.77317,50.10588 		"/>
+		<polygon class="st7" points="63.77317,50.10588 63.77317,83.81758 31.5316,64.7692 		"/>
+	</g>
+</g>
+</svg>
