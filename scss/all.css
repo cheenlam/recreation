@@ -591,47 +591,47 @@ img {
 }
 
 .sideMenu .selIcon.home {
-  background-image: url(/img/icon/sideMenu/home.svg);
+  background-image: url(../img/icon/sideMenu/home.svg);
 }
 
 .sideMenu .selIcon.sport {
-  background-image: url(/img/icon/sideMenu/sport.svg);
+  background-image: url(../img/icon/sideMenu/sport.svg);
 }
 
 .sideMenu .selIcon.casino {
-  background-image: url(/img/icon/sideMenu/casino.svg);
+  background-image: url(../img/icon/sideMenu/casino.svg);
 }
 
 .sideMenu .selIcon.slot {
-  background-image: url(/img/icon/sideMenu/slot.svg);
+  background-image: url(../img/icon/sideMenu/slot.svg);
 }
 
 .sideMenu .selIcon.fish {
-  background-image: url(/img/icon/sideMenu/fish.svg);
+  background-image: url(../img/icon/sideMenu/fish.svg);
 }
 
 .sideMenu .selIcon.lottery {
-  background-image: url(/img/icon/sideMenu/lottery.svg);
+  background-image: url(../img/icon/sideMenu/lottery.svg);
 }
 
 .sideMenu .selIcon.discount {
-  background-image: url(/img/icon/sideMenu/discount.svg);
+  background-image: url(../img/icon/sideMenu/discount.svg);
 }
 
 .sideMenu .selIcon.about {
-  background-image: url(/img/icon/sideMenu/about.svg);
+  background-image: url(../img/icon/sideMenu/about.svg);
 }
 
 .sideMenu .selIcon.question {
-  background-image: url(/img/icon/sideMenu/question.svg);
+  background-image: url(../img/icon/sideMenu/question.svg);
 }
 
 .sideMenu .selIcon.contact {
-  background-image: url(/img/icon/sideMenu/contact.svg);
+  background-image: url(../img/icon/sideMenu/contact.svg);
 }
 
 .sideMenu .selIcon.terms {
-  background-image: url(/img/icon/sideMenu/terms.svg);
+  background-image: url(../img/icon/sideMenu/terms.svg);
 }
 
 .sideMenu .loginBtn {
